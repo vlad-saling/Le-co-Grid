@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 150px [nav-start] auto 100px [nav-end];
+  grid-template-columns: [header-start] minmax(200px, 3fr) 9fr [header-end];
+}
+
+
+    header {
+        background-color: red;
+  grid-column: header-start / header-end;
+}
+nav {
+      background-color: blue;
+  grid-row: nav-start / nav-end;
+}
+
+footer {
+      background-color: green;
+    grid-column: header-start / header-end;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+ 
+    
+    <header class="header">header</header>
+    
+    <nav class="nav">nav</nav>
+    
+    <footer class="footer">footer</footer>
+    
+</body>
