@@ -8,8 +8,16 @@
             height: 100vh;
             width: 100vw;
             display: grid;
+            /* following line kindas define this:    1) alias for grid line called [nav-start] at 150px from top
+                                                     2) automatic fill of entire space available
+                                                     3) alias for grid line called [nav-end] at 150px from bottom
+                                                    */
             grid-template-rows: 150px [nav-start] auto [nav-end] 150px;
+
             grid-template-columns: [header-start] minmax(300px, 1fr) 2fr [header-end];
+
+
+
         }
         
         header {
