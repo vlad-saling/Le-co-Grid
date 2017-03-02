@@ -1,11 +1,16 @@
 $columns: 12;
+$column-gap: 10px;
 $rows: 12;
+$row-gap: 10px;
 $max-width: 75vw;
 $row-min-height: 10px;
 
+
 :root {
     --columns: $columns;
+    --column-gap: $column-gap;
     --rows: $rows;
+    --row-gap: $row-gap;
     --row-min-height: $row-min-height;
     --max-width: $max-width;
 }
@@ -23,7 +28,8 @@ $row-min-height: 10px;
 }
 
 .grid.gutter {
-    grid-template-columns: [col] 5fr repeat(calc(var(--columns)-1), 1fr [col] 5fr);
+    grid-column-gap: var(--column-gap);
+    grid-row-gap: var(--row-gap);
 }
 
 
@@ -41,4 +47,5 @@ $row-min-height: 10px;
         grid-row-end: $i;
     }
 }
+
 
