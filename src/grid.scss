@@ -1,10 +1,12 @@
 $columns: 12;
 $rows: 12;
 $max-width: 75vw;
+$row-min-height: 10px;
 
 :root {
     --columns: $columns;
     --rows: $rows;
+    --row-min-height: $row-min-height;
     --max-width: $max-width;
 }
 
@@ -17,7 +19,7 @@ $max-width: 75vw;
 }
 
 .grid.vertical {
-    grid-template-rows: repeat(var(--rows), minmax(1px,min-content));
+    grid-template-rows: repeat(var(--rows), minmax(var(--row-min-height), min-content));
 }
 
 .grid.gutter {
