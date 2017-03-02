@@ -1,71 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8"/>
-<title>Example of grid usage</title>
+<meta charset="UTF-8" />
+<title>Le-co native grid</title>
 <link href="./dist/grid.css" rel="stylesheet">
+
+<style>
+    /* just some styles to make grid page look nicer */
+    
+    body {
+        font-family: monospace;
+    }
+</style>
+
 <div class="grid">
 
-    <div class="gc-s1 gc-e4 gr-s1 gr-e3" style="background: red">
+    <div class="gc-s1 gc-e6">
 
-        <p class="ibm-h3">gc-s1 gc-e4</p>
+        <h1>Le-co native grid</h1>
+        <h2>Minimalistic framework for native CSS Grid based on 12col grids</h2>
+
+        <p>
+            Native CSS grids are cool to use and learn. Just grab this little FW and give it a go.
+        </p>
+        <p>
+            <b>Note #1</b>: Even though this is a grid system in traditional sense of the word you might be familiar and
+            comfortable with don't forget, that this application is really just the tip of the iceberg of options Native
+            CSS grids provide.
+        </p>
+        <p>
+            <b>Note #2</b>: Don't forger to tweak variables to suite your needs.
+        </p>
+
+        <p>
+            <b>Note #3</b>: You might need to enable some <a href="http://christopher.org/setting-chrome-flags-for-experimental-web-browser-layout-features/">flags</a>            in your browser to get this working.
+        </p>
+
+        <p>
+            This work was inspired by: <a href="https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/">CSS Grid Layout - creating complex grids</a>
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<div class="grid">
+
+    <div class="gc-s1 gc-e12 gr-s1 gr-e2">
+
+        <h2>Examples</h2>
+
+    </div>
+
+    <div class="gc-s1 gc-e4 gr-s2 gr-e4" style="background: red">
+
+        <h2>gc-s1 gc-e4</h2>
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
-            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've
-            said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy.
-            We need to neutralize the homing signal.
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
         </p>
 
     </div>
 
-    <div class="gc-s4 gc-e12" style="background: blue">
+    <div class="gc-s4 gc-e12 gr-s2 gr-e3" style="background: blue">
 
-        <p class="ibm-h3">gc-s4 gc-e12</p>
+        <h2>gc-s4 gc-e12</h2>
         <p>
             Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
-            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes have
-            recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records of
-            the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
         </p>
 
     </div>
 
-    <div class="gc-s4 gc-e12" style="background: green">
+    <div class="gc-s4 gc-e7 gr-s3 gr-e6" style="background: green">
 
-        <p class="ibm-h3">gc-s4 gc-e12</p>
+        <h2>gc-s4 gc-e12</h2>
         <p>
             Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
-            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes have
-            recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records of
-            the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
         </p>
 
     </div>
 
-    <div class="gc-s1 gc-e4" style="background: yellow">
+    <div class="gc-s7 gc-e12 gr-s3 gr-e4" style="background: tomato">
 
-
-        <p class="ibm-h3">gc-s1 gc-e4</p>
-
+        <h2>gc-s4 gc-e12</h2>
         <p>
-            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
-            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've
-            said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy.
-            We need to neutralize the homing signal.
+            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
         </p>
 
     </div>
 
-    <div class="gc-s6 gc-e9 gr-s4 gr-e8" style="background: purple">
+    <div class="gc-s1 gc-e4 gr-s4 gr-e8" style="background: yellow">
 
 
-        <p class="ibm-h3">gc-s1 gc-e4 gr-s4 gr-e8</p>
+        <h2>gc-s1 gc-e4</h2>
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
-            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've
-            said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy.
-            We need to neutralize the homing signal.
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
+        </p>
+
+    </div>
+
+    <div class="gc-s6 gc-e9 gr-s6 gr-e8" style="background: purple">
+
+
+        <h2>gc-s1 gc-e4 gr-s4 gr-e8</h2>
+
+        <p>
+            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
         </p>
 
     </div>
@@ -74,13 +135,13 @@
     <div class="gc-s1 gc-e12 gr-s8 gr-e9" style="background: cyan">
 
 
-        <p class="ibm-h3">gc-s1 gc-e4 gr-s4 gr-e8</p>
+        <h2>gc-s1 gc-e4 gr-s4 gr-e8</h2>
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
-            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if I've
-            said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal energy.
-            We need to neutralize the homing signal.
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
         </p>
 
     </div>
