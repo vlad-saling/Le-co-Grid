@@ -10,6 +10,22 @@
     body {
         font-family: monospace;
     }
+
+    .marked [class*='gc-'] {
+        position: relative;
+    }
+
+    .marked [class*='gc-']:before {
+        content: attr(class);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        color: #fff;
+        padding: 3px 5px;
+        border-radius: 5px;
+    }
+    
 </style>
 
 <div class="grid">
@@ -45,68 +61,19 @@
 </div>
 
 
-
 <div class="grid">
 
-    <div class="gc-s1 gc-e12 gr-s1 gr-e2">
+    <div class="gc-s1 gc-e13 gr-s1 gr-e2">
 
         <h2>Examples</h2>
 
     </div>
 
-    <div class="gc-s1 gc-e4 gr-s2 gr-e4" style="background: red">
+</div>
 
-        <h2>gc-s1 gc-e4</h2>
+<div class="grid vertical marked">
 
-        <p>
-            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
-            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
-            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
-            energy. We need to neutralize the homing signal.
-        </p>
-
-    </div>
-
-    <div class="gc-s4 gc-e12 gr-s2 gr-e3" style="background: blue">
-
-        <h2>gc-s4 gc-e12</h2>
-        <p>
-            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
-            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
-            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
-            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
-        </p>
-
-    </div>
-
-    <div class="gc-s4 gc-e7 gr-s3 gr-e6" style="background: green">
-
-        <h2>gc-s4 gc-e12</h2>
-        <p>
-            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
-            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
-            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
-            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
-        </p>
-
-    </div>
-
-    <div class="gc-s7 gc-e12 gr-s3 gr-e4" style="background: tomato">
-
-        <h2>gc-s4 gc-e12</h2>
-        <p>
-            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
-            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
-            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
-            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
-        </p>
-
-    </div>
-
-    <div class="gc-s1 gc-e4 gr-s4 gr-e8" style="background: yellow">
-
-
-        <h2>gc-s1 gc-e4</h2>
+    <div class="gc-s1 gc-e4 gr-s2 gr-e4" style="background-color: red">
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
@@ -117,10 +84,51 @@
 
     </div>
 
-    <div class="gc-s6 gc-e9 gr-s6 gr-e8" style="background: purple">
+    <div class="gc-s4 gc-e13 gr-s2 gr-e3" style="background-color: blue">
 
+        <p>
+            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+        </p>
 
-        <h2>gc-s1 gc-e4 gr-s4 gr-e8</h2>
+    </div>
+
+    <div class="gc-s4 gc-e7 gr-s3 gr-e5" style="background-color: green">
+
+        <p>
+            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+        </p>
+
+    </div>
+
+    <div class="gc-s7 gc-e13 gr-s3 gr-e4" style="background-color: tomato">
+
+        <p>
+            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+        </p>
+
+    </div>
+
+    <div class="gc-s7 gc-e13 gr-s4 gr-e5" style="background-color: lightblue">
+
+        <p>
+            Communication is not possible. The shuttle has no power. Using the gravitational pull of a star to slingshot back in time?
+            We are going to Starbase Montgomery for Engineering consultations prompted by minor read-out anomalies. Probes
+            have recorded unusual levels of geological activity in all five planetary systems. Assemble a team. Look at records
+            of the Drema quadrant. Would these scans detect artificial transmissions as well as natural signals?
+        </p>
+
+    </div>
+
+    <div class="gc-s1 gc-e4 gr-s4 gr-e8" style="background-color: yellow">
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
@@ -132,10 +140,30 @@
     </div>
 
 
-    <div class="gc-s1 gc-e12 gr-s8 gr-e9" style="background: cyan">
+    <div class="gc-s4 gc-e6 gr-s6 gr-e7" style="background-color: lawngreen">
+
+        <p>
+            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
+        </p>
+
+    </div>
+
+    <div class="gc-s6 gc-e9 gr-s6 gr-e8" style="background-color: purple">
+
+        <p>
+            We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I
+            see much of the EM spectrum ranging from heat and infrared through radio waves, et cetera, and forgive me if
+            I've said and listened to this a thousand times. This planet's interior heat provides an abundance of geothermal
+            energy. We need to neutralize the homing signal.
+        </p>
+
+    </div>
 
 
-        <h2>gc-s1 gc-e4 gr-s4 gr-e8</h2>
+    <div class="gc-s1 gc-e13 gr-s8 gr-e9" style="background-color: cyan">
 
         <p>
             We're acquainted with the wormhole phenomenon, but this... Is a remarkable piece of bio-electronic engineering by which I

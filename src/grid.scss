@@ -1,8 +1,10 @@
 $columns: 12;
+$rows: 12;
 $max-width: 75vw;
 
 :root {
     --columns: $columns;
+    --rows: $rows;
     --max-width: $max-width;
 }
 
@@ -14,12 +16,16 @@ $max-width: 75vw;
 
 }
 
-// .grid.gutter {
-//     grid-template-columns: [col] 5fr repeat(calc(var(--columns)-1), 1fr [col] 5fr);
-// }
+.grid.vertical {
+    grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.grid.gutter {
+    grid-template-columns: [col] 5fr repeat(calc(var(--columns)-1), 1fr [col] 5fr);
+}
 
 
-@for $i from 1 through $columns {
+@for $i from 1 through ($columns + 1){
     .gc-s#{$i} {
         grid-column-start: $i;
     }
