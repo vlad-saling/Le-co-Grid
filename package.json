@@ -1,0 +1,25 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "Native CSS grid framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-saling/css-grid.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "native",
+    "grid"
+  ],
+  "author": "Vladislav Saling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad-saling/css-grid/issues"
+  },
+  "homepage": "https://github.com/vlad-saling/css-grid#readme"
+}
