@@ -17,7 +17,7 @@ $max-width: 75vw;
 }
 
 .grid.vertical {
-    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-template-rows: repeat(var(--rows), minmax(1px,min-content));
 }
 
 .grid.gutter {
