@@ -1,0 +1,29 @@
+$columns: 12;
+
+:root {
+    --columns: $columns;
+}
+
+.grid {
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+
+}
+
+@for $i from 1 through $columns {
+    .gc-s#{$i} {
+        grid-column-start: $i;
+    }
+    .gc-e#{$i} {
+        grid-column-end: $i;
+    }
+    .gr-s#{$i} {
+        grid-row-start: $i;
+    }
+    .gr-e#{$i} {
+        grid-row-end: $i;
+    }
+}
+

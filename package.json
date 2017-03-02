@@ -4,7 +4,8 @@
   "description": "Native CSS grid framework",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:prod": "./node_modules/.bin/node-sass ./src/grid.scss ./dist/grid.css --output-style compressed",
+    "build:dev": "./node_modules/.bin/node-sass ./src/grid.scss ./dist/grid.css"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/vlad-saling/css-grid/issues"
   },
-  "homepage": "https://github.com/vlad-saling/css-grid#readme"
+  "homepage": "https://github.com/vlad-saling/css-grid#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.0"
+  }
 }
