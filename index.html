@@ -12,34 +12,52 @@
         font-family: "Arial";
         font-size: 1rem;
         line-height: 1.5em;
+        padding: 0;
+        margin: 0;
     }
 
-    .marked [class*='gc-'],
-    .marked [class*='gr-'] {
+    .marked {
+        margin-bottom: 2em;
+    }
+
+    .marked > [class*='g'] {
         position: relative;
         border: 1px solid #a02a14;
         border-radius: 5px;
-        background-color: tomato;
+        background-color: crimson;
         padding: 10px;
     }
 
-    .marked [class*='gc-']:before,
-    .marked [class*='gr-']:before {
-        content: attr(class);
-        position: absolute;
-        top: 0;
-        left: 0;
+    .marked > [class*='g']:before {
+        content: "Classes: " attr(class);
         background-color: #000;
         color: #fff;
         padding: 3px 5px;
-        border-radius: 5px;
+        border-radius: 3px;
+        font-size: 0.75em;
+    }
+
+    .styled-block {
+        background-color: #92c3b6;
+    }
+
+    a {
+        background-color: #3A8570;
+        padding: 1px 4px 3px;
+        border-radius: 3px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     code {
         background-color: crimson;
         color: #fff;
-        padding: 1px 3px;
-        border-radius: 5px;
+        padding: 1px 4px 3px;
+        border-radius: 3px;
     }
     
 </style>
@@ -47,51 +65,55 @@
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-<div class="grid">
+<div class="styled-block">
 
-    <div class="gc-s1 gc-e13">
+    <div class="grid">
 
-        <h1>Le-co native grid</h1>
-        <h2>Minimalistic framework for native CSS Grid Layout based on 12col grids</h2>
+        <div class="gc-s1 gc-e13">
 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid" data-icon="octicon-star" data-style="mega" data-count-href="/vlad-saling/Le-co-Grid/stargazers" data-count-api="/repos/vlad-saling/Le-co-Grid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star vlad-saling/Le-co-Grid on GitHub">Star</a>
+            <h1>Le-co native grid</h1>
+            <h2>Minimalistic framework for native CSS Grid Layout based on 12col grids</h2>
 
-
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/vlad-saling/Le-co-Grid/network" data-count-api="/repos/vlad-saling/Le-co-Grid#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork vlad-saling/Le-co-Grid on GitHub">Fork</a>
-
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download vlad-saling/Le-co-Grid on GitHub">Download</a>
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid" data-icon="octicon-star" data-style="mega" data-count-href="/vlad-saling/Le-co-Grid/stargazers" data-count-api="/repos/vlad-saling/Le-co-Grid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star vlad-saling/Le-co-Grid on GitHub">Star</a>
 
 
-        <p>
-            This grid system uses well known concept of 12 col grid to demonstrate principles of native CSS Grid Layout, however native grids can do so much more and I encourage you to explore them further.
-        </p>
-        <p>
-            <b>Note #1</b>: You can tweak variables to modify grid for your needs.
-        </p>
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/vlad-saling/Le-co-Grid/network" data-count-api="/repos/vlad-saling/Le-co-Grid#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork vlad-saling/Le-co-Grid on GitHub">Fork</a>
 
-        <p>
-            <b>Note #2</b>: You might need to enable some <a href="http://christopher.org/setting-chrome-flags-for-experimental-web-browser-layout-features/">flags</a>            in your browser to get this working.
-        </p>
+    <!-- Place this tag where you want the button to render. -->
+    <a class="github-button" href="https://github.com/vlad-saling/Le-co-Grid/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download vlad-saling/Le-co-Grid on GitHub">Download</a>
 
-        <p>
-            This work was inspired by: <a href="https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/">CSS Grid Layout - creating complex grids</a>
-        </p>
 
-        <h3>How this works?</h3>
+            <p>
+                This grid system uses well known concept of 12 col grid to demonstrate principles of native CSS Grid Layout, however native grids can do so much more and I encourage you to explore them further.
+            </p>
 
-        <p>To enable grid layout add class <code>.grid</code> to continer. In case you want gutter, make it <code>.grid.gutter</code>. Then by using correct class combinations your can pick where you grid cell should being (starting column/row line) and to where it should span (end line). For example, if you want you cell to start at first column line and first row line you'd used classes <code>.gc-s1</code> ("gc" as in <i>grid column</i> and "s" as in <i>start</i>) and <code>.gr-s1</code> and to end at the end of third column on second line you'd add <code>.gc-e4</code> and <code>.gr-e2</code>.</p>
+            <p>
+                <b>Note #1</b>: You might need to enable some <a href="http://christopher.org/setting-chrome-flags-for-experimental-web-browser-layout-features/">flags</a>            in your browser to get this working.
+            </p>
 
-        <p>Gotchas: When assigning rows, you can leave it up to browser or you can add class <code>.vertical</code> to <code>.grid</code> to have 12 rows with minimal 1px of height. At this point, this class is mostly usefull to check if you layed out cells correctly and that you are not skipping rows by having too high cells (which is fine, but it may lead to confusion when reading classes on cells).</p>
+            <p>
+                This work was inspired by: <a href="https://rachelandrew.co.uk/archives/2015/02/04/css-grid-layout-creating-complex-grids/">CSS Grid Layout - creating complex grids</a>
+            </p>
 
+            <h3>How this works?</h3>
+
+            <p>To enable grid layout add class <code>.grid</code> to continer. In case you want gutter, make it <code>.grid.gutter</code>. Then by using correct class combinations your can pick where you grid cell should being (starting column/row line) and to where it should span (end line). For example, if you want you cell to start at first column line and first row line you'd used classes <code>.gc-s1</code> ("gc" as in <i>grid column</i> and "s" as in <i>start</i>) and <code>.gr-s1</code> and to end at the end of third column on second line you'd add <code>.gc-e4</code> and <code>.gr-e2</code>.</p>
+
+            <p>Gotchas: When assigning rows, you can leave it up to browser or you can add class <code>.vertical</code> to <code>.grid</code> to have 12 rows with minimal 1px of height. At this point, this class is mostly usefull to check if you layed out cells correctly and that you are not skipping rows by having too high cells (which is fine, but it may lead to confusion when reading classes on cells).</p>
+
+            <h3>Tl;dr</h3>
+
+            <p>Classnames define where grid cells start and end (in both column and row direction)</p>
+
+            <p><b>Example</b>: <code>.gc-s1 .gc-e3 .gr-s1 .gr-e2</code> will translate into cell starting at column grid line 1 and, ending at column grid line 3, starting at row line 1 and ending at row line 2.</p>
+
+        </div>
 
     </div>
 
 </div>
-
-
 
 
 
@@ -379,4 +401,14 @@
 
 
 
+<div class="styled-block">
 
+    <div class="grid">
+
+        <div class="gc-s1 gc-e8">
+            <p><a href="https://github.com/vlad-saling">by Vlad</a></p>
+        </div>
+
+    </div>
+
+</div>
