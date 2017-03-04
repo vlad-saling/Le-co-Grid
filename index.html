@@ -22,42 +22,49 @@
 
     .marked > [class*='g'] {
         position: relative;
-        border: 1px solid #a02a14;
+        border: 1px solid #821b2f;
         border-radius: 5px;
-        background-color: crimson;
         padding: 10px;
     }
 
     .marked > [class*='g']:before {
         content: "Classes: " attr(class);
-        background-color: #000;
+        background-color: #821b2f;
         color: #fff;
         padding: 3px 5px;
         border-radius: 3px;
-        font-size: 0.75em;
+        font-family: monospace;
     }
 
     .styled-block {
-        background-color: #92c3b6;
+        background-color: crimson;
+        color: #fff;
     }
 
     a {
-        background-color: #3A8570;
-        padding: 1px 4px 3px;
-        border-radius: 3px;
         color: #fff;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
     }
 
     code {
-        background-color: crimson;
+        background-color: #821b2f;
         color: #fff;
         padding: 1px 4px 3px;
         border-radius: 3px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: #000;
+    }
+
+    h1:before, 
+    h2:before,
+    h3:before {
+        content: "\21DB";
+        position: absolute;
+        margin-left: -1em;
+        color: #000;
     }
     
 </style>
