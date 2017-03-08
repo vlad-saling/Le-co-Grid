@@ -2,8 +2,11 @@ $columns: 12;
 $column-gap: 10px;
 $rows: 12;
 $row-gap: 10px;
-$max-width: 75vw;
 $row-min-height: 1px;
+
+$max-width: 75vw;
+
+$screen-min-width: 376px;
 
 
 :root {
@@ -13,17 +16,18 @@ $row-min-height: 1px;
     --row-gap: $row-gap;
     --row-min-height: $row-min-height;
     --max-width: $max-width;
+    --screen-min-width: $screen-min-width;
 }
 
 .grid {
-    max-width: var(--max-width);
+    overflow: auto;
+    max-width: 90vw;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
 
-    @media only screen and (max-width: 375px) {
-        display: block;
-        overflow: auto;
+    @media only screen and (min-width: $screen-min-width) {
+        max-width: var(--max-width);
+        display: grid;
+        grid-template-columns: repeat(var(--columns), 1fr);
     }
 }
 
