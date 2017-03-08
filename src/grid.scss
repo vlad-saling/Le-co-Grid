@@ -21,7 +21,12 @@ $row-min-height: 1px;
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
 
+    @media only screen and (max-width: 375px) {
+        display: block;
+        overflow: auto;
+    }
 }
+
 
 .grid.vertical {
     grid-template-rows: repeat(var(--rows), minmax(var(--row-min-height), min-content));
