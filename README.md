@@ -7,5 +7,5 @@
     
 
 <p>
-Check <a href="https://vlad-saling.github.io/Le-co-Grid/">this link</a> for examples and details</a>
+Check <a href="https://labzonesk.github.io/Le-co-Grid/">this link</a> for examples and details</a>
 </p>
